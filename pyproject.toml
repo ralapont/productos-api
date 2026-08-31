@@ -1,0 +1,29 @@
+[project]
+name = "productos-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ralapont", email = "pi96ak8mzrlhfr95p4f7v9nj35sv52@bots.bitbucket.org" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.19.1",
+    "fastapi>=0.141.1",
+    "hvac>=2.4.0",
+    "mypy>=2.3.1",
+    "psycopg>=3.3.4",
+    "pydantic-settings>=2.15.0",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.16.5",
+    "sqlmodel>=0.0.42",
+    "uvicorn[standard]>=0.52.4",
+]
+
+[project.scripts]
+productos-api = "productos_api:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"

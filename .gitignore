@@ -1,0 +1,55 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Ruff
+.ruff_cache/
+
+# MyPy
+.mypy_cache/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Alembic
+alembic/versions/*.pyc
+
+# Python package artifacts
+*.egg
+*.whl
+
+# UV
+.python-version
+
+# SQLite (por si haces pruebas)
+*.db
+*.sqlite3
