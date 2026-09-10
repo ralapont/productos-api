@@ -34,5 +34,14 @@ dev = [
     "httpx>=0.28.1",
     "pytest>=9.1.1",
     "pytest-asyncio>=1.4.0",
+    "pytest-html>=4.2.0",
     "pytest-mock>=3.15.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+filterwarnings = [
+    "ignore:.*httpx.*:DeprecationWarning",
+    "ignore::DeprecationWarning",
+    "ignore::UserWarning",
 ]

@@ -1,6 +1,6 @@
 from sqlmodel import Session, create_engine
 
-from src.productos_api.core.config import settings
+from productos_api.core.config import settings
 
 
 engine = create_engine(
